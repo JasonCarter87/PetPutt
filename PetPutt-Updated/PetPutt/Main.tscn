@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/pet_putt_graphics_pack/wood_wall.png" type="Texture" id=1]
+[ext_resource path="res://Stick.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Wall.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Ball.tscn" type="PackedScene" id=4]
+
+[node name="Main" type="Node2D"]
+
+[node name="Background" type="Sprite" parent="."]
+scale = Vector2( 24, 32 )
+texture = ExtResource( 1 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Stick" parent="." instance=ExtResource( 2 )]
+position = Vector2( 350.643, 537.653 )
+
+[node name="Wall4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 75.6261, 518.798 )
+rotation = 1.5708
+scale = Vector2( 6, 1 )
+
+[node name="Wall5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 656.136, 524.642 )
+rotation = 1.5708
+scale = Vector2( 6, 1 )
+
+[node name="Wall3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 367.612, 966.741 )
+scale = Vector2( 4, 1 )
+
+[node name="Wall6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 367.612, 74.6538 )
+scale = Vector2( 4, 1 )
+
+[node name="Ball" parent="." instance=ExtResource( 4 )]
+position = Vector2( 354.149, 210.266 )
+
