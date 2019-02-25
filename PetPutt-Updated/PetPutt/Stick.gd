@@ -11,5 +11,5 @@ func _ready():
 func _process(delta):
 	#self.position = get_global_mouse_position()
 	self.look_at(get_global_mouse_position())
-	#$"Sprite".look_at(ball.get_position_in_parent())
+	$"Sprite".look_at(Vector2(get_parent().position.x, get_parent().position.y))
 	pass
